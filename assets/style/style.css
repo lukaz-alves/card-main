@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'figtree';
+    src: url('../fonts/Figtree-Italic-VariableFont_wght.ttf') format('ttf'),
+         url('../fonts/Figtree-VariableFont_wght.ttf') format('ttf'),
+         url('../fonts/static/Figtree-Medium.ttf') format('ttf'),
+         url('../fonts/static/Figtree-ExtraBold.ttf') format('ttf');
+    font-weight: 500, 800;
+}
+
+:root {
+    --cor-de-fundo: hsl(47, 88%, 63%);
+    --cor-do-card: hsl(0, 0%, 100%);
+    --cor-de-destaque: hsl(0, 0%, 7%);
+    --cor-do-texto: hsl(0, 0%, 42%);
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'figtree', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main#card {
+    height: 30em;
+    width: 22em;
+    background-color: var(--cor-do-card);
+    border-radius: 10px;
+    box-shadow: 8px 8px 1px black;
+}
+
+main>img.img-card {
+    width: 20em;
+    border-radius: 10px;
+    margin: 16px 16px 12px 16px;
+}
+
+main>h1 {
+    font-size: 12px;
+    font-weight: 800;
+    width: 80px;
+    background-color: var(--cor-de-fundo);
+    border-radius: 6px;
+    margin-left: 16px;
+    padding: 5px;
+    text-indent: 11px;
+}
+
+main>p.data {
+    margin: 16px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+main>h2 {
+    margin: 0px 16px 10px 16px;
+    font-size: 23px;
+}
+
+main>h2:hover {
+    color: var(--cor-de-fundo);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main>p.texto {
+    margin: 16px;
+    font-size: 15px;
+    color: var(--cor-do-texto);
+    line-height: 21px;
+}
+
+main>img.foto-perfil {
+    width: 2em;
+    float: left;
+    margin-left: 16px;
+    margin-top: 6px;
+}
+
+main>span.nome {
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+footer>a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor-de-destaque);
+}
